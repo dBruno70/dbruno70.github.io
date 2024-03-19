@@ -1,0 +1,6 @@
+- name: LinkedIn
+  link: https://www.linkedin.com/in/bruno-dolberth/
+  icon: linkedin
+- name: GitHub
+  link: https://github.com/dBruno70
+  icon: github

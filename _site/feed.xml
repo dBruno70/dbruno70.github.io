@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2024-03-19T15:31:34-03:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Lista de contatos em React</title><link href="http://0.0.0.0:4000/projetos/2024/03/07/lista-de-contatos.html" rel="alternate" type="text/html" title="Lista de contatos em React" /><published>2024-03-07T00:00:00-03:00</published><updated>2024-03-07T00:00:00-03:00</updated><id>http://0.0.0.0:4000/projetos/2024/03/07/lista-de-contatos</id><content type="html" xml:base="http://0.0.0.0:4000/projetos/2024/03/07/lista-de-contatos.html"><![CDATA[<p>Um dos meus primeiros projetos utilizando React. Uma lista de contato simples.</p>
+
+<p><a href="/projetos/contactlist">Clique aqui para acessar o projeto</a>.</p>
+
+<h2 id="capacidades">Capacidades</h2>
+<p>A aplicação é bem simples, foi criadas apenas para aprendizado.
+Ela pode:</p>
+<ul>
+  <li>Criar contatos</li>
+  <li>Alterar dados de contatos existentes</li>
+  <li>Excluir contatos</li>
+  <li>Salvar localmente as alterações do usuário</li>
+</ul>
+
+<h2 id="dados-do-usuário">Dados do usuário</h2>
+<p>Os dados do usuário são salvos localmente, ou seja, no próprio dispositivo em
+que a aplicação está sendo utilizada, nenhum dado é enviado para a internet.</p>
+
+<h2 id="informações-técnicas">Informações técnicas</h2>
+<p>A aplicação foi desenvolvida utilizando apenas funcionalidades fornecidas pelo React.
+Na época, versão 18.
+Os estilos foram feitos do zero, utilizando da capacidade de estilos isolados por componente fornecido pelo React.
+A aplicação salva os dados do usuário no LocalStorage.</p>]]></content><author><name></name></author><category term="projetos" /><category term="react" /><category term="utilitários" /><summary type="html"><![CDATA[Um dos meus primeiros projetos utilizando React. Uma lista de contato simples.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/galleries/contactlist/4.png" /><media:content medium="image" url="http://0.0.0.0:4000/assets/galleries/contactlist/4.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

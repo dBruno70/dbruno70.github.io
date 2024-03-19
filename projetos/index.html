@@ -1,0 +1,23 @@
+---
+layout: default
+title: Projetos
+---
+<ul class="list-unstyled">
+	{% for post in site.categories.projetos %}
+	<li class="mb-4">
+		<a class="row g-0 border border-2 rounded text-decoration-none text-light" href="{{post.url}}">
+			<div class="col-12 col-md-3 col-lg-2 d-flex text-center justify-content-center align-items-center">
+				{%if post.image %}
+				<img class="img-fluid" src="{{post.image}}">
+				{%else%}
+				Sem Imagem
+				{%endif%}
+			</div>
+			<div class="col p-4">
+				<h3>{{post.title}}</h3>
+				{{post.excerpt}}
+			</div>
+		</a>
+	</li>
+	{% endfor %}
+</ul>

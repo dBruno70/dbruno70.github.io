@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1 class="fs-1">Blog</h1>
+<p>Artigos de guia.</p>
+
+<ul class="list-unstyled mt-5">
+	{% for post in site.categories.blog %}
+	<li class="mt-5">
+		<h3><a href="{{post.url}}" class="link-body-emphasis">{{post.title}}</a></h3>
+		{{post.excerpt}}
+	</li>
+	{% endfor %}
+</ul>

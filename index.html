@@ -1,1 +1,45 @@
-Olá
+---
+layout: default
+title: Meu site pessoal
+---
+<h1>{{page.title}}</h1>
+
+<div class="row mt-4 gy-4">
+	<div class="col-md-auto col-12">
+		<img src="/assets/literalmente_eu.jpg" width="300" height="300" class="rounded-circle border border-2 p-1 d-block mx-auto" alt="foto">
+	</div>
+	<div class="col">
+		<h2>Sobre mim</h2>
+		<p>
+			<span class="fs-4">Bruno Augusto Dolberth</span><br>
+			<span class="fw-lighter fs-5">Desenvolvedor Front-end</span>
+		</p>
+		<p>
+			Desenvolvedor front-end experiente com as principais tecnologias do ramo como JavaScript, TypeScript, NodeJS, React, Vue, HTML, CSS, experiente em projetos colaborativos e com o uso de ferramentas como Git. 
+			Sempre focado em entregar trabalhos de qualidade com agilidade e boas práticas.
+			Já possuindo experiência em programação por hobby, iniciou seus estudos de desenvolvimento front-end na segunda metade de 2022 e no ano seguinte começou a trabalhar como freelancer em projetos colaborativos usando React e Vue.
+		</p>
+		<ul class="mt-4 row list-unstyled">
+			{% for item in site.data.contact %}
+			<li class="col-auto">
+				<a href="{{item.link}}" target="_blank" class="text-light fs-3 bi bi-{{item.icon}}"></a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<h2 class="mt-5">Últimos posts e projetos</h2>
+<ul class="list-unstyled ms-3">
+{% for post in site.posts limit:5 %}
+<li class="mt-4">
+	<div class="row align-items-center mb-2">
+		<h3 class="col-auto mb-0"><a class="text-light" href="{{post.url}}">{{post.title}}</a></h3>
+		{% for cat in post.categories %}
+		<span class="col-auto border rounded-pill">{{cat | capitalize }}</span>
+		{% endfor %}
+	</div>
+	{{post.excerpt}}
+</li>
+{% endfor %}
+</ul>
